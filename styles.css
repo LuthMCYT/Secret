@@ -206,21 +206,6 @@ button {
 /*========
   layout
 ========*/
-.layout-container {
-   width:100%;
-}
-main {
-  width:75%;
-  float:right;
-}
-aside {
-  width:25%;
-  float:right;
-}
-.layout-container:after {
-   clear:both;
-  }
-
 .center {
   display: flex;
   align-items: center;

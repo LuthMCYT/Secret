@@ -206,6 +206,7 @@ button {
 /*========
   layout
 ========*/
+
 .center {
   display: flex;
   align-items: center;
@@ -409,4 +410,4 @@ main {
   .scroll-container {
     display: none;
   }
-}
+    }

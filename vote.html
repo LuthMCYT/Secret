@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Server Name</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+	// Add your voting site urls here
+        var urls = [
+            'https://topg.org/',
+            'https://minecraft-mp.com/',
+            'https://topminecraftservers.org/',
+            'https://minecraft-server.net',
+            'https://minecraftservers.org/',
+            'https://www.serverpact.com/',
+            'https://minecraft-server-list.com/',
+            'https://minecraftpocket-servers.com/' // remeber to remove "," for the last url
+        ];
+
+    // Function to check if the popup blocker is enabled
+        function isPopupBlockerEnabled() {
+            var a = window.open("", "", "width=1,height=1");
+            if (!a || a.closed || typeof a.closed == "undefined") {
+                return true;
+            }
+            a.close();
+            return false;
+        }
+        // If popup blocker is not enabled, open URLs in new tabs
+        if (!isPopupBlockerEnabled()) {
+            for (var i = 0; i < urls.length; i++) {
+                window.open(urls[i], "_blank");
+            }
+        } else {
+		// Alert user if popup blocker is enabled, you can change the message if you want
+            alert("Please note: if your web browser has disabled pop-ups, this feature will not work. Please check your browser settings and try again.");
+        }
+    </script>
+</head>
+<body>
+
+<h1>Server Name</h1>
+<p>Thank you for voting!</p>
+
+</body>
+</html>
